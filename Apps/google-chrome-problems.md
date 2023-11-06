@@ -1,5 +1,10 @@
 # google chrome problems
 
+## Table Of Content
+
+1. [locked profile problem](#locked-profile-the-profile-appears-to-be-in-use)
+2. [Emojis not displayed](#emojis-not-displayed)
+
 ## locked profile (The profile appears to be in use)
 
 > Google Chrome - The profile appears to be in use by another Google Chrome process ({process-number}) on another computer ({linux-distribution-name}). Chrome has locked the profile so that it doesn't get corrupted. If you are sure no other processes are using this profile, you can unlock the profile and relaunch Chrome.
