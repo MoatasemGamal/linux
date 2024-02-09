@@ -47,6 +47,39 @@ _install or reinstall fonts-noto-color-emoji or google-noto-emoji-fonts_
 
    `sudo dnf reinstall google-noto-emoji-fonts`
 
+## Emojis Black and White problem "make it colorful"
+_Just create the following config file:_
+
+` ~/.config/fontconfig/fonts.conf `
+
+```
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
+<fontconfig>
+ <alias>
+  <family>serif</family>
+  <prefer>
+   <family>Noto Sans</family>
+   <family>Noto Color Emoji</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>sans-serif</family>
+  <prefer>
+   <family>Noto Sans</family>
+   <family>Noto Color Emoji</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>monospace</family>
+  <prefer>
+   <family>Noto Sans</family>
+   <family>Noto Color Emoji</family>
+  </prefer>
+ </alias>
+ <dir>~/.fonts</dir>
+</fontconfig>
+```
 ### Resources:
 
 - [Why Aren’t Color Emojis Showing Up in Chrome and Firefox on Ubuntu 18.04?](https://devicetests.com/color-emojis-chrome-firefox-ubuntu)
@@ -54,3 +87,5 @@ _install or reinstall fonts-noto-color-emoji or google-noto-emoji-fonts_
 - [How To Enable Color Emoji on Chrome for Linux (Updated)](https://www.omgubuntu.co.uk/2016/08/enable-color-emoji-linux-google-chrome-noto)
 
 - [fedoraproject rpms / google-noto-emoji-fonts](https://src.fedoraproject.org/rpms/google-noto-emoji-fonts)
+
+- [Emojis in black and white](https://www.reddit.com/r/kde/comments/fpov5d/comment/g3znyj3/)
